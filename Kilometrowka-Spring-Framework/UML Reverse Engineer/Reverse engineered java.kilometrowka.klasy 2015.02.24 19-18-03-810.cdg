@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Reverse engineered java.kilometrowka.klasy 2015.02.24 19-18-03-810">
+  <ClassDiagramComponents>
+    <Class xPosition="20.0" yPosition="20.0" package="kilometrowka.klasy" name="Data" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="rok" visibility="private" type="int"/>
+        <Field name="miesiac" visibility="private" type="int"/>
+      </Fields>
+      <Methods>
+        <Method name="getRok" visibility="public" returnType="int"/>
+        <Method name="setRok" visibility="public" returnType="void">
+          <Argument type="int" name="rok"/>
+        </Method>
+        <Method name="getMiesiac" visibility="public" returnType="int"/>
+        <Method name="setMiesiac" visibility="public" returnType="void">
+          <Argument type="int" name="miesiac"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="20.0" package="kilometrowka.klasy" name="Firma" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="id" visibility="private" type="int"/>
+        <Field name="nazwaFirmy" visibility="private" type="String"/>
+        <Field name="adres" visibility="private" type="String"/>
+        <Field name="miasto" visibility="private" type="String"/>
+        <Field name="kodPocztowy" visibility="private" type="String"/>
+        <Field name="nip" visibility="private" type="String"/>
+        <Field name="regon" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="getId" visibility="public" returnType="int"/>
+        <Method name="setId" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getNazwaFirmy" visibility="public" returnType="String"/>
+        <Method name="setNazwaFirmy" visibility="public" returnType="void">
+          <Argument type="String" name="nazwaFirmy"/>
+        </Method>
+        <Method name="getAdres" visibility="public" returnType="String"/>
+        <Method name="setAdres" visibility="public" returnType="void">
+          <Argument type="String" name="adres"/>
+        </Method>
+        <Method name="getMiasto" visibility="public" returnType="String"/>
+        <Method name="setMiasto" visibility="public" returnType="void">
+          <Argument type="String" name="miasto"/>
+        </Method>
+        <Method name="getKodPocztowy" visibility="public" returnType="String"/>
+        <Method name="setKodPocztowy" visibility="public" returnType="void">
+          <Argument type="String" name="kodPocztowy"/>
+        </Method>
+        <Method name="getNip" visibility="public" returnType="String"/>
+        <Method name="setNip" visibility="public" returnType="void">
+          <Argument type="String" name="nip"/>
+        </Method>
+        <Method name="getRegon" visibility="public" returnType="String"/>
+        <Method name="setRegon" visibility="public" returnType="void">
+          <Argument type="String" name="regon"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="620.0" yPosition="20.0" package="kilometrowka.klasy" name="Log" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="id_logu" visibility="private" type="int"/>
+        <Field name="data" visibility="private" type="String"/>
+        <Field name="akcja" visibility="private" type="int"/>
+        <Field name="ip" visibility="private" type="String"/>
+        <Field name="useragent" visibility="private" type="String"/>
+        <Field name="tresc" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="getId_logu" visibility="public" returnType="int"/>
+        <Method name="setId_logu" visibility="public" returnType="void">
+          <Argument type="int" name="id_logu"/>
+        </Method>
+        <Method name="getData" visibility="public" returnType="String"/>
+        <Method name="setData" visibility="public" returnType="void">
+          <Argument type="String" name="data"/>
+        </Method>
+        <Method name="getAkcja" visibility="public" returnType="int"/>
+        <Method name="setAkcja" visibility="public" returnType="void">
+          <Argument type="int" name="akcja"/>
+        </Method>
+        <Method name="getIp" visibility="public" returnType="String"/>
+        <Method name="setIp" visibility="public" returnType="void">
+          <Argument type="String" name="ip"/>
+        </Method>
+        <Method name="getUseragent" visibility="public" returnType="String"/>
+        <Method name="setUseragent" visibility="public" returnType="void">
+          <Argument type="String" name="useragent"/>
+        </Method>
+        <Method name="getTresc" visibility="public" returnType="String"/>
+        <Method name="setTresc" visibility="public" returnType="void">
+          <Argument type="String" name="tresc"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="920.0" yPosition="20.0" package="kilometrowka.klasy" name="Logowanie" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="login" visibility="private" type="String"/>
+        <Field name="haslo" visibility="private" type="String"/>
+        <Field name="haslo2" visibility="private" type="String"/>
+        <Field name="email" visibility="private" type="String"/>
+        <Field name="id" visibility="private" type="int"/>
+        <Field name="zalogowany" visibility="private" type="boolean"/>
+      </Fields>
+      <Methods>
+        <Method name="getLogin" visibility="public" returnType="String"/>
+        <Method name="setLogin" visibility="public" returnType="void">
+          <Argument type="String" name="login"/>
+        </Method>
+        <Method name="getHaslo" visibility="public" returnType="String"/>
+        <Method name="setHaslo" visibility="public" returnType="void">
+          <Argument type="String" name="haslo"/>
+        </Method>
+        <Method name="getId" visibility="public" returnType="int"/>
+        <Method name="setId" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="isZalogowany" visibility="public" returnType="boolean"/>
+        <Method name="setZalogowany" visibility="public" returnType="void">
+          <Argument type="boolean" name="zalogowany"/>
+        </Method>
+        <Method name="getEmail" visibility="public" returnType="String"/>
+        <Method name="setEmail" visibility="public" returnType="void">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getHaslo2" visibility="public" returnType="String"/>
+        <Method name="setHaslo2" visibility="public" returnType="void">
+          <Argument type="String" name="haslo2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="20.0" yPosition="420.0" package="kilometrowka.klasy" name="Pojazd" visibility="public">
+      <Constructors>
+        <Constructor name="Pojazd" visibility="public"/>
+        <Constructor name="Pojazd" visibility="public">
+          <Argument type="String" name="nazwa"/>
+          <Argument type="String" name="numerRejestracyjny"/>
+          <Argument type="String" name="pojemnoscSilnika"/>
+          <Argument type="String" name="opis"/>
+        </Constructor>
+      </Constructors>
+      <Fields>
+        <Field name="id" visibility="private" type="int"/>
+        <Field name="stawka" visibility="private" type="double"/>
+        <Field name="nazwa" visibility="private" type="String"/>
+        <Field name="numerRejestracyjny" visibility="private" type="String"/>
+        <Field name="pojemnoscSilnika" visibility="private" type="String"/>
+        <Field name="opis" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="getId" visibility="public" returnType="int"/>
+        <Method name="setId" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getNazwa" visibility="public" returnType="String"/>
+        <Method name="setNazwa" visibility="public" returnType="void">
+          <Argument type="String" name="nazwa"/>
+        </Method>
+        <Method name="getNumerRejestracyjny" visibility="public" returnType="String"/>
+        <Method name="setNumerRejestracyjny" visibility="public" returnType="void">
+          <Argument type="String" name="numerRejestracyjny"/>
+        </Method>
+        <Method name="getPojemnoscSilnika" visibility="public" returnType="String"/>
+        <Method name="setPojemnoscSilnika" visibility="public" returnType="void">
+          <Argument type="String" name="pojemnoscSilnika"/>
+        </Method>
+        <Method name="getOpis" visibility="public" returnType="String"/>
+        <Method name="setOpis" visibility="public" returnType="void">
+          <Argument type="String" name="opis"/>
+        </Method>
+        <Method name="getStawka" visibility="public" returnType="double"/>
+        <Method name="setStawka" visibility="public" returnType="void">
+          <Argument type="double" name="stawka"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="420.0" package="kilometrowka.klasy" name="Pracownik" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="id" visibility="private" type="int"/>
+        <Field name="imie" visibility="private" type="String"/>
+        <Field name="nazwisko" visibility="private" type="String"/>
+        <Field name="adres" visibility="private" type="String"/>
+        <Field name="miasto" visibility="private" type="String"/>
+        <Field name="kodPocztowy" visibility="private" type="String"/>
+        <Field name="telefon" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="getId" visibility="public" returnType="int"/>
+        <Method name="setId" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getImie" visibility="public" returnType="String"/>
+        <Method name="setImie" visibility="public" returnType="void">
+          <Argument type="String" name="imie"/>
+        </Method>
+        <Method name="getNazwisko" visibility="public" returnType="String"/>
+        <Method name="setNazwisko" visibility="public" returnType="void">
+          <Argument type="String" name="nazwisko"/>
+        </Method>
+        <Method name="getAdres" visibility="public" returnType="String"/>
+        <Method name="setAdres" visibility="public" returnType="void">
+          <Argument type="String" name="adres"/>
+        </Method>
+        <Method name="getMiasto" visibility="public" returnType="String"/>
+        <Method name="setMiasto" visibility="public" returnType="void">
+          <Argument type="String" name="miasto"/>
+        </Method>
+        <Method name="getKodPocztowy" visibility="public" returnType="String"/>
+        <Method name="setKodPocztowy" visibility="public" returnType="void">
+          <Argument type="String" name="kodPocztowy"/>
+        </Method>
+        <Method name="getTelefon" visibility="public" returnType="String"/>
+        <Method name="setTelefon" visibility="public" returnType="void">
+          <Argument type="String" name="telefon"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="620.0" yPosition="420.0" package="kilometrowka.klasy" name="Przejazd" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="idPojazdu" visibility="private" type="String"/>
+        <Field name="idTrasy" visibility="private" type="String"/>
+        <Field name="idFirmy" visibility="private" type="String"/>
+        <Field name="idPracownika" visibility="private" type="String"/>
+        <Field name="celWyjazdu" visibility="private" type="String"/>
+        <Field name="adnotacje" visibility="private" type="String"/>
+        <Field name="data" visibility="private" type="String"/>
+        <Field name="odlegloscTrasy" visibility="private" type="String"/>
+        <Field name="nazwaPojazdu" visibility="private" type="String"/>
+        <Field name="nazwaFirmy" visibility="private" type="String"/>
+        <Field name="nazwaPracownika" visibility="private" type="String"/>
+        <Field name="nazwaTrasy" visibility="private" type="String"/>
+        <Field name="miesiacIRok" visibility="private" type="List&lt;Data&gt;"/>
+        <Field name="id" visibility="private" type="String"/>
+        <Field name="cena" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="getId" visibility="public" returnType="String"/>
+        <Method name="setId" visibility="public" returnType="void">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="getIdPojazdu" visibility="public" returnType="String"/>
+        <Method name="setIdPojazdu" visibility="public" returnType="void">
+          <Argument type="String" name="idPojazdu"/>
+        </Method>
+        <Method name="getIdTrasy" visibility="public" returnType="String"/>
+        <Method name="setIdTrasy" visibility="public" returnType="void">
+          <Argument type="String" name="idTrasy"/>
+        </Method>
+        <Method name="getIdFirmy" visibility="public" returnType="String"/>
+        <Method name="setIdFirmy" visibility="public" returnType="void">
+          <Argument type="String" name="idFirmy"/>
+        </Method>
+        <Method name="getIdPracownika" visibility="public" returnType="String"/>
+        <Method name="setIdPracownika" visibility="public" returnType="void">
+          <Argument type="String" name="idPracownika"/>
+        </Method>
+        <Method name="getCelWyjazdu" visibility="public" returnType="String"/>
+        <Method name="setCelWyjazdu" visibility="public" returnType="void">
+          <Argument type="String" name="celWyjazdu"/>
+        </Method>
+        <Method name="getAdnotacje" visibility="public" returnType="String"/>
+        <Method name="setAdnotacje" visibility="public" returnType="void">
+          <Argument type="String" name="adnotacje"/>
+        </Method>
+        <Method name="getData" visibility="public" returnType="String"/>
+        <Method name="setData" visibility="public" returnType="void">
+          <Argument type="String" name="data"/>
+        </Method>
+        <Method name="getOdlegloscTrasy" visibility="public" returnType="String"/>
+        <Method name="setOdlegloscTrasy" visibility="public" returnType="void">
+          <Argument type="String" name="odlegloscTrasy"/>
+        </Method>
+        <Method name="getNazwaPojazdu" visibility="public" returnType="String"/>
+        <Method name="setNazwaPojazdu" visibility="public" returnType="void">
+          <Argument type="String" name="nazwaPojazdu"/>
+        </Method>
+        <Method name="getNazwaFirmy" visibility="public" returnType="String"/>
+        <Method name="setNazwaFirmy" visibility="public" returnType="void">
+          <Argument type="String" name="nazwaFirmy"/>
+        </Method>
+        <Method name="getNazwaPracownika" visibility="public" returnType="String"/>
+        <Method name="setNazwaPracownika" visibility="public" returnType="void">
+          <Argument type="String" name="nazwaPracownika"/>
+        </Method>
+        <Method name="getNazwaTrasy" visibility="public" returnType="String"/>
+        <Method name="setNazwaTrasy" visibility="public" returnType="void">
+          <Argument type="String" name="nazwaTrasy"/>
+        </Method>
+        <Method name="getMiesiacIRok" visibility="public" returnType="List&lt;Data&gt;"/>
+        <Method name="setMiesiacIRok" visibility="public" returnType="void">
+          <Argument type="List&lt;Data&gt;" name="miesiacIRok"/>
+        </Method>
+        <Method name="getCena" visibility="public" returnType="String"/>
+        <Method name="setCena" visibility="public" returnType="void">
+          <Argument type="String" name="cena"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="920.0" yPosition="420.0" package="kilometrowka.klasy" name="Stawka" visibility="public">
+      <Constructors>
+        <Constructor name="Stawka" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="stawkaDo900" visibility="private" type="double"/>
+        <Field name="stawkaPowyzej900" visibility="private" type="double"/>
+        <Field name="stawkaMotorower" visibility="private" type="double"/>
+        <Field name="stawkaMotocykl" visibility="private" type="double"/>
+      </Fields>
+      <Methods>
+        <Method name="getStawkaDo900" visibility="public" returnType="double"/>
+        <Method name="getStawkaPowyzej900" visibility="public" returnType="double"/>
+        <Method name="getStawkaMotorower" visibility="public" returnType="double"/>
+        <Method name="getStawkaMotocykl" visibility="public" returnType="double"/>
+        <Method name="policzStawke" visibility="public" returnType="double">
+          <Argument type="double" name="a"/>
+          <Argument type="double" name="b"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="20.0" yPosition="820.0" package="kilometrowka.klasy" name="Trasa" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="id" visibility="private" type="int"/>
+        <Field name="nazwa" visibility="private" type="String"/>
+        <Field name="skad" visibility="private" type="String"/>
+        <Field name="dokad" visibility="private" type="String"/>
+        <Field name="odleglosc" visibility="private" type="String"/>
+        <Field name="opis" visibility="private" type="String"/>
+      </Fields>
+      <Methods>
+        <Method name="getId" visibility="public" returnType="int"/>
+        <Method name="setId" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getNazwa" visibility="public" returnType="String"/>
+        <Method name="setNazwa" visibility="public" returnType="void">
+          <Argument type="String" name="nazwa"/>
+        </Method>
+        <Method name="getSkad" visibility="public" returnType="String"/>
+        <Method name="setSkad" visibility="public" returnType="void">
+          <Argument type="String" name="skad"/>
+        </Method>
+        <Method name="getDokad" visibility="public" returnType="String"/>
+        <Method name="setDokad" visibility="public" returnType="void">
+          <Argument type="String" name="dokad"/>
+        </Method>
+        <Method name="getOdleglosc" visibility="public" returnType="String"/>
+        <Method name="setOdleglosc" visibility="public" returnType="void">
+          <Argument type="String" name="odleglosc"/>
+        </Method>
+        <Method name="getOpis" visibility="public" returnType="String"/>
+        <Method name="setOpis" visibility="public" returnType="void">
+          <Argument type="String" name="opis"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="miesiacIRok" source="Przejazd" target="Data" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List"/>
+    <UseRelation source="Przejazd" target="Data" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

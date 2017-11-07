@@ -1,0 +1,47 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri='http://java.sun.com/jsp/jstl/core' prefix='c'%>
+
+<h1 style="color: #353594;">Czym jest Kilometrówka 2015?</h1>
+<p> Aplikacja do ewidencji pojazdów jest projektem części praktycznej pracy inżynierskiej. Do czego służy? Kilometrówka 2015 jest aplikacją wspomagającą prowadzenie ewidencji przebiegu pojazdów dla celów podatku dochodowego.
+    Ewidencje tego rodzaju prowadzą właściciele firm, którzy chcą wliczyć w koszty wydatki związane z używaniem pojazdu osobowego dla potrzeb prowadzonej
+    firmy. Ostateczna kwota podsumowania miesiąca wynika z przemnożenia liczby kilometrów faktycznego przebiegu pojazdu przez stawkę za jeden kilometr przebiegu. </p>
+
+
+<h2 style="color: #353594;">Dlaczego warto korzystać z Kilometrówka 2015?</h2>
+<p>Kilometrówka 2015 jest darmowym rozwiązaniem służącym do ewidencji i druku przebiegu pojazdów. Główne cechy na które warto zwrócić uwagę to: </p>
+<ul >
+    <li>Brak ograniczeń w ilości wprowadzonych danych</li>
+    <li>Dostosowanie pod urządzenia mobilne</li>
+    <li>Możliwość wydruku ewidencji</li>
+    <li>Możliwość eksportu danych</li>
+    <li>Brak ukrytych opłat</li>
+</ul>
+<h2 style="color: #353594;">Aktualne stawki na rok 2015</h2>
+<center>
+    <table class="table table-hover" style="max-width: 50%;">
+        <thead>
+            <tr>
+                <th>Typ pojazdu</th>
+                <th>Stawka</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Samochód osobowy o pojemności skokowej do 900cm<sup>3</sup></td>
+                <td><c:out value="${stawka.stawkaDo900}" /> zł</td>
+            </tr>
+            <tr>
+                <td>Samochód osobowy o pojemności skokowej powyżej 900cm<sup>3</sup></td>
+                <td><c:out value="${stawka.stawkaPowyzej900}" /> zł</td>
+            </tr>
+            <tr>
+                <td>Motorower</td>
+                <td><c:out value="${stawka.stawkaMotorower}" /> zł</td>
+            </tr>
+            <tr>
+                <td>Motocykl</td>
+                <td><c:out value="${stawka.stawkaMotocykl}" /> zł</td>
+            </tr>
+        </tbody>
+    </table>
+</center>

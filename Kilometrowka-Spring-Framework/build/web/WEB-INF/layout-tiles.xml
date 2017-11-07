@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!-- was: <?xml version="1.0" encoding="ISO-8859-1" ?> -->
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="zalogowany" template="/WEB-INF/layout/szablonZalogowany.jsp">
+        <put-attribute name="nav" value="/WEB-INF/layout/nawigacjaZalogowany.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/stopka.jsp" />
+    </definition>
+    
+    <definition name="nieZalogowany" template="/WEB-INF/layout/szablonNieZalogowany.jsp">
+        <put-attribute name="nav_1" value="/WEB-INF/layout/nawigacjaNieZalogowany.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layout/stopka.jsp" />
+    </definition>
+  
+  
+    <definition name="index" extends="nieZalogowany">
+        <put-attribute name="title" value="" />
+        <put-attribute name="body" value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+  
+    <definition name="firmy" extends="zalogowany">
+        <put-attribute name="title" value="Firmy" />
+        <put-attribute name="body" value="/WEB-INF/jsp/firmy.jsp" />
+    </definition>
+  
+    <definition name="pojazdy" extends="zalogowany">
+        <put-attribute name="title" value="Pojazdy" />
+        <put-attribute name="body" value="/WEB-INF/jsp/pojazdy.jsp" />
+    </definition>
+  
+    <definition name="pracownicy" extends="zalogowany">
+        <put-attribute name="title" value="Pracownicy" />
+        <put-attribute name="body" value="/WEB-INF/jsp/pracownicy.jsp" />
+    </definition>
+  
+    <definition name="przejazdy" extends="zalogowany">
+        <put-attribute name="title" value="Przejazdy" />
+        <put-attribute name="body" value="/WEB-INF/jsp/przejazdy.jsp" />
+    </definition>
+    
+    <definition name="stronaGlowna" extends="nieZalogowany">
+        <put-attribute name="title" value="Strona glowna" />
+        <put-attribute name="body" value="/WEB-INF/jsp/stronaGlowna.jsp" />
+    </definition>
+    
+    <definition name="trasy" extends="zalogowany">
+        <put-attribute name="title" value="Trasy" />
+        <put-attribute name="body" value="/WEB-INF/jsp/trasy.jsp" />
+    </definition>
+    
+    
+    <definition name="ewidencjaNr" extends="zalogowany">
+        <put-attribute name="title" value=" " />
+        <put-attribute name="body" value="/WEB-INF/jsp/ewidencjaNr.jsp" />
+    </definition>
+    
+    <definition name="ewidencja" extends="zalogowany">
+        <put-attribute name="title" value="Ewidencja" />
+        <put-attribute name="body" value="/WEB-INF/jsp/ewidencja.jsp" />
+    </definition>
+    
+     <definition name="formularze/usun" extends="zalogowany">
+        <put-attribute name="title" value="Usunąć?" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/usun.jsp" />
+    </definition>
+    
+    <definition name="formularze/dodajFirme" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj firme" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/dodajFirme.jsp" />
+    </definition>
+    
+    
+    
+    <definition name="formularze/stronyWynikow/firmaWynik" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj firme" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/stronyWynikow/firmaWynik.jsp" />
+    </definition>
+    
+    <definition name="formularze/dodajTrase" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj trase" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/dodajTrase.jsp" />
+    </definition>
+    
+    <definition name="formularze/stronyWynikow/trasaWynik" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj trase" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/stronyWynikow/trasaWynik.jsp" />
+    </definition>
+    
+     <definition name="formularze/dodajPracownika" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj pracownika" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/dodajPracownika.jsp" />
+    </definition>
+    
+    <definition name="formularze/stronyWynikow/pracownikWynik" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj pracownika" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/stronyWynikow/pracownikWynik.jsp" />
+    </definition>
+    
+     <definition name="formularze/dodajPojazd" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj pojazd" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/dodajPojazd.jsp" />
+    </definition>
+    
+    <definition name="formularze/stronyWynikow/pojazdWynik" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj pojazd" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/stronyWynikow/pojazdWynik.jsp" />
+    </definition>
+    
+    <definition name="formularze/dodajPrzejazd" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj przejazd" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/dodajPrzejazd.jsp" />
+    </definition>
+    
+    <definition name="formularze/stronyWynikow/przejazdWynik" extends="zalogowany">
+        <put-attribute name="title" value="Dodaj przejazd" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/stronyWynikow/przejazdWynik.jsp" />
+    </definition>
+  
+  <definition name="formularze/logowanie" extends="nieZalogowany">
+        <put-attribute name="title" value="Logowanie" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/logowanie.jsp" />
+    </definition>
+    
+    <definition name="formularze/rejestracja" extends="nieZalogowany">
+        <put-attribute name="title" value="Rejestracja" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/rejestracja.jsp" />
+    </definition>
+    
+      <definition name="/WEB-INF/jsp/formularze/stronyWynikow/rejestracjaWynik" extends="nieZalogowany">
+        <put-attribute name="title" value="Rejestracja" />
+        <put-attribute name="body" value="/WEB-INF/jsp/formularze/stronyWynikow/rejestracjaWynik.jsp" />
+    </definition>
+    
+    <definition name="blad" extends="zalogowany">
+        <put-attribute name="title" value="Informacja" />
+        <put-attribute name="body" value="/WEB-INF/jsp/blad.jsp" />
+    </definition>
+    
+    <definition name="info" extends="nieZalogowany">
+        <put-attribute name="title" value="O kilometrówce" />
+        <put-attribute name="body" value="/WEB-INF/jsp/info.jsp" />
+    </definition>
+  
+</tiles-definitions>

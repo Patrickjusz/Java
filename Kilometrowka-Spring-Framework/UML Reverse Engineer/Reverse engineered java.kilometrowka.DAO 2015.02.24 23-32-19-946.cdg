@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Reverse engineered java.kilometrowka.DAO 2015.02.24 23-32-19-946">
+  <ClassDiagramComponents>
+    <Class xPosition="20.0" yPosition="20.0" package="kilometrowka.DAO" name="FirmaDao" visibility="public">
+      <Constructors>
+        <Constructor name="FirmaDao" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="jdbcTemplate" visibility="private" type="JdbcTemplate"/>
+      </Fields>
+      <Methods>
+        <Method name="zapiszFirme" visibility="public" returnType="void">
+          <Argument type="Firma" name="firma"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="aktualizujFirme" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="Firma" name="firma"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="usunFirme" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzFirmy" visibility="public" returnType="List&lt;Firma&gt;">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzFirmePoId" visibility="public" returnType="Firma">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="sprawdzFirmy" visibility="public" returnType="boolean">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="20.0" package="kilometrowka.DAO" name="LogDao" visibility="public">
+      <Constructors>
+        <Constructor name="LogDao" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="jdbcTemplate" visibility="private" type="JdbcTemplate"/>
+      </Fields>
+      <Methods>
+        <Method name="dodajZdarzenie" visibility="public" returnType="void">
+          <Argument type="int" name="akcja"/>
+          <Argument type="String" name="ip"/>
+          <Argument type="String" name="useragent"/>
+          <Argument type="String" name="tresc"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="620.0" yPosition="20.0" package="kilometrowka.DAO" name="LogowanieDao" visibility="public">
+      <Constructors>
+        <Constructor name="LogowanieDao" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="jdbcTemplate" visibility="private" type="JdbcTemplate"/>
+      </Fields>
+      <Methods>
+        <Method name="pobierzSolDynamiczna" visibility="public" returnType="String">
+          <Argument type="String" name="login"/>
+        </Method>
+        <Method name="sprawdzDostepnoscLoginu" visibility="public" returnType="Boolean">
+          <Argument type="String" name="login"/>
+        </Method>
+        <Method name="hashujMD5" visibility="public" returnType="String">
+          <Argument type="String" name="tekst"/>
+          <Argument type="String" name="solDynamiczna"/>
+        </Method>
+        <Method name="zaloguj" visibility="public" returnType="Logowanie">
+          <Argument type="String" name="login"/>
+          <Argument type="String" name="haslo"/>
+        </Method>
+        <Method name="zarejestrujUzytkownika" visibility="public" returnType="void">
+          <Argument type="Logowanie" name="logowanie"/>
+        </Method>
+        <Method name="wyloguj" visibility="public" returnType="boolean"/>
+      </Methods>
+    </Class>
+    <Class xPosition="920.0" yPosition="20.0" package="kilometrowka.DAO" name="MysqlConfig" visibility="public">
+      <Constructors>
+        <Constructor name="MysqlConfig" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="dataSource" visibility="private" type="DriverManagerDataSource"/>
+      </Fields>
+      <Methods>
+        <Method name="getDataSource" visibility="public" returnType="DriverManagerDataSource"/>
+      </Methods>
+    </Class>
+    <Class xPosition="20.0" yPosition="420.0" package="kilometrowka.DAO" name="PojazdDao" visibility="public">
+      <Constructors>
+        <Constructor name="PojazdDao" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="jdbcTemplate" visibility="private" type="JdbcTemplate"/>
+      </Fields>
+      <Methods>
+        <Method name="zapiszPojazd" visibility="public" returnType="void">
+          <Argument type="Pojazd" name="pojazd"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="usunPojazd" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="aktualizujPojazd" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="Pojazd" name="pojazd"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzPojazdy" visibility="public" returnType="List&lt;Pojazd&gt;">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzPojazdPoId" visibility="public" returnType="Pojazd">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="sprawdzPojazdy" visibility="public" returnType="boolean">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="320.0" yPosition="420.0" package="kilometrowka.DAO" name="PracownikDao" visibility="public">
+      <Constructors>
+        <Constructor name="PracownikDao" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="jdbcTemplate" visibility="private" type="JdbcTemplate"/>
+      </Fields>
+      <Methods>
+        <Method name="zapiszPracownika" visibility="public" returnType="void">
+          <Argument type="Pracownik" name="pracownik"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="usunPracownika" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="aktualizujPracownika" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="Pracownik" name="pracownik"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzPracownikow" visibility="public" returnType="List&lt;Pracownik&gt;">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzPracownikaPoId" visibility="public" returnType="Pracownik">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="sprawdzPracownikow" visibility="public" returnType="boolean">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="620.0" yPosition="420.0" package="kilometrowka.DAO" name="PrzejazdDao" visibility="public">
+      <Constructors>
+        <Constructor name="PrzejazdDao" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="jdbcTemplate" visibility="private" type="JdbcTemplate"/>
+      </Fields>
+      <Methods>
+        <Method name="pobierzPrzejazdy" visibility="public" returnType="List&lt;Przejazd&gt;">
+          <Argument type="int" name="idPojazdu"/>
+          <Argument type="int" name="idFirmy"/>
+          <Argument type="int" name="id_uzytkownika"/>
+          <Argument type="int" name="miesiac"/>
+          <Argument type="int" name="rok"/>
+        </Method>
+        <Method name="pobierzPrzejazdy" visibility="public" returnType="List&lt;Przejazd&gt;">
+          <Argument type="int" name="id_uzytkownika"/>
+          <Argument type="int" name="limit"/>
+        </Method>
+        <Method name="pobierzPrzejazdPoId" visibility="public" returnType="Przejazd">
+          <Argument type="int" name="idParm"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="zapiszPrzejazd" visibility="public" returnType="void">
+          <Argument type="Przejazd" name="przejazd"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="aktualizujPrzejazd" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="Przejazd" name="przejazd"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzOdleglosc" visibility="public" returnType="double">
+          <Argument type="int" name="idPojazdu"/>
+          <Argument type="int" name="idFirmy"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="usunPrzejazd" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="usunWszystkiePrzejazdy" visibility="public" returnType="void">
+          <Argument type="int" name="typ"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="sprawdzPrzejazdy" visibility="public" returnType="boolean">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="sprawdzWarunkiDodania" visibility="public" returnType="boolean">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzDaty" visibility="public" returnType="List&lt;Data&gt;">
+          <Argument type="int" name="idPojazdu"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="zamienMiesiac" visibility="public" returnType="String">
+          <Argument type="int" name="miesiac"/>
+        </Method>
+        <Method name="pobierzIloscPrzejazdow" visibility="public" returnType="int">
+          <Argument type="int" name="id_uzytkownika"/>
+          <Argument type="int" name="limit"/>
+        </Method>
+        <Method name="dlugoscPrzejazdow" visibility="public" returnType="int">
+          <Argument type="int" name="id_uzytkownika"/>
+          <Argument type="int" name="id_pojazdu"/>
+          <Argument type="int" name="id_firmy"/>
+        </Method>
+        <Method name="sumaPrzejazdow" visibility="public" returnType="double">
+          <Argument type="int" name="id_uzytkownika"/>
+          <Argument type="int" name="id_pojazdu"/>
+          <Argument type="int" name="id_firmy"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class xPosition="920.0" yPosition="420.0" package="kilometrowka.DAO" name="TrasaDao" visibility="public">
+      <Constructors>
+        <Constructor name="TrasaDao" visibility="public"/>
+      </Constructors>
+      <Fields>
+        <Field name="jdbcTemplate" visibility="private" type="JdbcTemplate"/>
+      </Fields>
+      <Methods>
+        <Method name="zapiszTrase" visibility="public" returnType="void">
+          <Argument type="Trasa" name="trasa"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="usunTrase" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="aktualizujTrase" visibility="public" returnType="void">
+          <Argument type="int" name="id"/>
+          <Argument type="Trasa" name="trasa"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzTrasy" visibility="public" returnType="List&lt;Trasa&gt;">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="pobierzTrasePoId" visibility="public" returnType="Trasa">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+        <Method name="sprawdzTrasy" visibility="public" returnType="boolean">
+          <Argument type="int" name="id_uzytkownika"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

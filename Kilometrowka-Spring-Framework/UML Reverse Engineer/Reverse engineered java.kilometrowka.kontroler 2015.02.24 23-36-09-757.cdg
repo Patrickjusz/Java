@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Reverse engineered java.kilometrowka.kontroler 2015.02.24 23-36-09-757">
+  <ClassDiagramComponents>
+    <Class xPosition="20.0" yPosition="20.0" package="kilometrowka.kontroler" name="DomyslnyKontroler" visibility="public">
+      <Constructors/>
+      <Fields>
+        <Field name="log" visibility="private" type="Logowanie"/>
+      </Fields>
+      <Methods>
+        <Method name="logowanie" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="reg"/>
+        </Method>
+        <Method name="pobierzRaport" visibility="public" returnType="String">
+          <Argument type="HttpServletResponse" name="response"/>
+          <Argument type="String" name="idFirmy"/>
+          <Argument type="String" name="idPojazdu"/>
+          <Argument type="String" name="miesiac"/>
+          <Argument type="String" name="rok"/>
+        </Method>
+        <Method name="rejestracja" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="processRegistration3" visibility="public" returnType="String">
+          <Argument type="Logowanie" name="logowanie"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="HttpServletRequest" name="request"/>
+        </Method>
+        <Method name="processRegistration" visibility="public" returnType="String">
+          <Argument type="Logowanie" name="logowanie"/>
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="HttpServletRequest" name="request"/>
+        </Method>
+        <Method name="wyloguj" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="index" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="blad" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="blad"/>
+        </Method>
+        <Method name="stronaGlowna" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="przejazdy" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="nr"/>
+        </Method>
+        <Method name="trasy" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="pojazdy" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="firmy" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="pracownicy" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="ewidencjaNr" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="idFirmy"/>
+          <Argument type="String" name="idPojazdu"/>
+          <Argument type="String" name="miesiac"/>
+          <Argument type="String" name="rok"/>
+        </Method>
+        <Method name="ewidencja" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="ewidencja" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="idFirmy"/>
+        </Method>
+        <Method name="dodajPojazd" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="processRegistration" visibility="public" returnType="String">
+          <Argument type="Pojazd" name="pojazd"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="dodajFirme" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="processRegistration" visibility="public" returnType="String">
+          <Argument type="Firma" name="firma"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="edytujFirme" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="processRegistration2" visibility="public" returnType="String">
+          <Argument type="Firma" name="firma"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="edytujTrasy" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="processRegistration2" visibility="public" returnType="String">
+          <Argument type="Trasa" name="trasa"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="edytujPojazd" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="processRegistration2" visibility="public" returnType="String">
+          <Argument type="Pojazd" name="pojazd"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="edytujPracownika" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="processRegistration2" visibility="public" returnType="String">
+          <Argument type="Pracownik" name="pracownik"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="edytujPrzejazd" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="processRegistration2" visibility="public" returnType="String">
+          <Argument type="Przejazd" name="przejazd"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="dodajPracownika" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="processRegistration" visibility="public" returnType="String">
+          <Argument type="Pracownik" name="pracownik"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="dodajTrase" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="processRegistration" visibility="public" returnType="String">
+          <Argument type="Trasa" name="trasa"/>
+          <Argument type="BindingResult" name="result"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="dodajPrzejazd" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="processRegistration" visibility="public" returnType="String">
+          <Argument type="Przejazd" name="przejazd"/>
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+        <Method name="usun" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="akceptacja"/>
+          <Argument type="String" name="typ"/>
+        </Method>
+        <Method name="przekieruj" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+          <Argument type="String" name="typ"/>
+        </Method>
+        <Method name="info" visibility="public" returnType="String">
+          <Argument type="ModelMap" name="map"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
